@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.DS_Store
+
+# Virtual env
+.venv/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Tools caches
+.mypy_cache/
+.pytest_cache/
+
+# Data & reports (generated)
+data/transactions.csv
+reports/metrics.json
+reports/fraud_results.csv
+reports/figures/
+
+# IDE
+.vscode/
+.idea/
+
+
