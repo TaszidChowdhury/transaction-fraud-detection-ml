@@ -383,3 +383,25 @@ Reusable, testable code used by both CLI and notebooks.
 - `src/metrics.py` exports standardized metrics and a tidy CSV ready for BI tools.
 - `reports/` collects artifacts (JSON, CSV, PNG figures) for stakeholder-facing outputs.
 
+---
+
+## Figure explanations
+
+### amount_distribution.png
+- Shows how much people usually spend per transaction. Most are small-to-medium amounts, with a long tail of big purchases and a few outliers.
+
+### fraud_rate_by_merchant_category.png
+- Compares the share of fraudulent transactions by category. Riskier categories (like electronics, travel, digital goods) tend to have higher bars.
+
+### fraud_rate_by_time_of_day.png
+- Shows when fraud happens more often. Evenings and nights typically have higher fraud rates than mornings/afternoons.
+
+### fraud_rate_by_location.png
+- Highlights locations with higher fraud rates. Some regions (e.g., certain states) appear riskier than others.
+
+### heatmap_amount_deciles_time.png
+- A grid of fraud rate by amount bucket (low to high) and time of day. Darker cells mean higher risk—fraud increases for higher amounts and tends to be higher later in the day.
+
+### roc_curve_logreg_vs_tree.png
+- Compares model ability to distinguish fraud from normal transactions. Curves closer to the top-left are better; the area under each curve (AUC) summarizes overall performance. The higher curve is the stronger model.
+
